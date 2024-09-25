@@ -1,6 +1,6 @@
 from pytubefix import YouTube
 from pytubefix.exceptions import PytubeFixError
-from pydub import AudioSegment
+#from pydub import AudioSegment
 import os
 import tkinter as tk
 import validators
@@ -35,24 +35,31 @@ def yt_to_mp3():
             return
 
         label.config(text=f"Saving at {dl_path}...", wraplength=200)
-        process_dl_mp3(yt, dl_path)
+        process_mp3_dl(yt, dl_path)
+        #process_dl_mp3(yt, dl_path)
         input.delete(0, tk.END)
         change_label()
     except PytubeFixError as p:
         label.config(text=f'Problem occurred: {p}')
         return
-    except Exception as e:
+    except:
         label.config(text="Network problem!")
         return
 
-def process_dl_mp3(yt, dl_path):
+'''def process_dl_mp3(yt, dl_path):
     root.update_idletasks()
     stream = yt.streams.get_audio_only()
     dld_stream = stream.download(output_path=dl_path)
     mp3_file = os.path.splitext(dld_stream)[0] + '.mp3'
     audio = AudioSegment.from_file(dld_stream)
     audio.export(mp3_file, format='mp3')
-    os.remove(dld_stream)
+    os.remove(dld_stream)'''
+
+def process_mp3_dl(yt, dl_path):
+    root.update_idletasks()
+    stream = yt.streams.get_audio_only()
+    stream.download(mp3=True, output_path=dl_path)
+
 
 def change_label():
     label.config(text="Dl completed!")
