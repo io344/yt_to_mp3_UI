@@ -25,12 +25,15 @@ def yt_to_mp3():
             return
         if not validators.url(yt_url):
             return
+
         yt = YouTube(yt_url, 'MWEB')
         label.config(text="Please select a directory:")
         dl_path = browse_dir()
+        # if directory not specified
         if not dl_path:
             label.config(text=orig_label)
             return
+
         label.config(text=f"Saving at {dl_path}...", wraplength=200)
         process_dl_mp3(yt, dl_path)
         input.delete(0, tk.END)
