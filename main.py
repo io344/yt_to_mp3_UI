@@ -23,7 +23,7 @@ def yt_to_mp3():
         if not yt_url.strip():
             return
 
-        yt = YouTube(yt_url, 'MWEB')
+        yt = YouTube(yt_url)
         label.config(text="Please select a directory:")
         dl_path = browse_dir()
         # if directory not specified
