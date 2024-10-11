@@ -9,11 +9,9 @@
       <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/Analysis-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/EXE-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/PYZ-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/warn-yt_to_mp3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/warn-yt_to_mp3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/xref-yt_to_mp3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/xref-yt_to_mp3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/yt_to_mp3/yt_to_mp3.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/yt_to_mp3/yt_to_mp3.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
