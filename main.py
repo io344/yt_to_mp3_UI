@@ -37,7 +37,8 @@ def yt_to_mp3():
         input.delete(0, tk.END)
         change_label("Download complete!")
     except PytubeFixError as p:
-        change_label(f"Error occurred: {p}")
+        change_label("Youtube Error/Client Error!")
+        print(f"Error: {p}")
         return
     except:
         change_label("Network problem!")
@@ -60,10 +61,10 @@ def process_mp3_dl(yt, dl_path):
 
 def change_label(text):
     label.config(text=text)
-    root.after(2000, revert_label)
+    root.after(4000, revert_label)
 
 def revert_label():
-    label.config(text=orig_label)
+    label.config(text=orig_label, wraplength=200)
 
 def on_button_click():
     button.grid_remove()
